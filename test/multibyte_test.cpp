@@ -18,11 +18,6 @@ TEST(MultiByteTest, Length) {
 	EXPECT_EQ(8, TestMultiByte::kLength);
 }
 
-TEST(MultiByteTest, ByteSize) {
-	typedef mutibyte::MultiByte<uint32_t, 8> TestMultiByte;
-	EXPECT_EQ(32, TestMultiByte::kByteSize);
-}
-
 TEST(MultiByteTest, Value) {
 	typedef mutibyte::MultiByte<char, 8> TestMultiByte;
 	string str = string("!!!Hello World!!!");
